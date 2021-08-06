@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Daphne Elizabeth</title>
+    <link rel="shortcut icon" type="image/jpg" href="../images/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFD8S2NQRK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VFD8S2NQRK');
+    </script>
+
+    <script src="https://kit.fontawesome.com/b379ffe145.js" crossorigin="anonymous"></script>
+
+    <script>
+
+      var formValidator = new Validator("mail-form");
+      
+      formValidator.addValidation("name","req","Please provide your name");
+      formValidator.addValidation("email","req","Please provide your email");
+      formValidator.addValidation("email","email","Please enter a valid email address");
+      formValidator.addValidation("subject","req","Please add a subject");
+      formValidator.addValidation("inquiry-type","req","Please specify the inquiry type");
+    </script>
+  </head>
+
+  <body id="contact" class="s-pttn">
+
+    <section id="contact--left" class="blue-bg blue--light p-minor--vary-xl p-b">
+
+      <h1 class="force-center orange--light">Contact</h1>
+      <p>Are you interested in working together? Do you have questions about my work or how something is done?</p>
+      <p>The form on this page will send an email directly to me. Whether you want to talk product or graphic design for an idea you have, or you are curious about the next drop happening in my artist shop, I am happy to have a chat.</p>
+      
+      <nav>
+
+        <ul>
+
+          <li>
+
+            <a class="icon-link--orange-bg--light" href="../menu/index.html">
+            
+              <span class="visually-hidden">Home</span>
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg--light" href="../about/index.html">
+            
+              <span class="visually-hidden active active--white-bg--orange">About</span>
+              <i class="far fa-address-card"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg--light" href="index.html">
+
+              <span class="visually-hidden">Contact</span>
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg--light" href="https://www.instagram.com/daizziestudio/" target="_blank">
+            
+              <span class="visually-hidden">Instagram</span>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg--light" href="https://www.etsy.com/shop/delicateentity" target="_blank">
+            
+              <span class="visually-hidden">Shop</span>
+              <i class="fa fa-solid fa-store"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2 class="visually-hidden">Frequently Asked Questions</h2>
+      <p class="montserrat--italic">Q: Are you currently taking on commissions?</p>
+      <p>Yes! I am currently open for work. At this time I am open to working on illustrations, logos &amp; branding, as well as product design.</p>
+
+      <p class="montserrat--italic">Q: What are your rates?</p>
+      <p>Pricing varies on a few different factors including time to complete, scale of, and type of project.</p>
+
+      <img class="m-t" src="../images/connected.png" alt="two hands reaching out for each other"/>
+    </section>
+
+    <section id="contact--right" class="p-minor--vary-xl">
+
+      <h2 class="visually-hidden">Contact Form</h2>
+
+      <form name="contact-form" method="POST" action="../contact-form-processing.php">
+      
+        <div class="contact-form--text-input">
+          <p>Name:</p><br/>
+          <input type="text" name="name">
+        </div>
+
+        <div class="contact-form--text-input">
+
+          <p>Email:</p><br/>
+          <input type="text" name="email">
+        </div>
+
+        <div class="contact-form--text-input">
+
+          <p>Subject</p><br/>
+          <input type="text" name="subject">
+        </div>
+
+        <div id="contact-form--radio-input" class="m-b">
+
+          <p>Inquiry Type:</p>
+          <input type="radio" id="application" name="inquiry-type" value="Job Application">
+            <label for="application">Job Application</label><br/>
+
+          <input type="radio" id="freelance" name="inquiry-type" value="Freelance Work">
+            <label for="freelance">Freelance Work</label><br/>
+
+          <input type="radio" id="shop" name="inquiry-type" value="Shop Questions">
+            <label for="shop">Shop Questions</label><br/>
+        </div>
+
+        <div class="contact-form--text-input">
+
+          <p>Message:</p><br/>
+          <textarea name="message"></textarea><br/>
+        </div>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+  </body>
+</html>

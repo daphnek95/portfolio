@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | Daphne Elizabeth</title>
+    <link rel="shortcut icon" type="image/jpg" href="../images/favicon.ico"/>
+    <meta name="description" content="The main hub of Daphne Elizabeth's creative portfolio. Explore their art or learn more about them.">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFD8S2NQRK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VFD8S2NQRK');
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b379ffe145.js" crossorigin="anonymous"></script>
+
+    <script>
+
+      var formValidator = new Validator("mail-form");
+      
+      formValidator.addValidation("name","req","Please provide your name");
+      formValidator.addValidation("email","req","Please provide your email");
+      formValidator.addValidation("email","email","Please enter a valid email address");
+      formValidator.addValidation("subject","req","Please add a subject");
+      formValidator.addValidation("inquiry-type","req","Please specify the inquiry type");
+    </script>
+  </head>
+
+  <body id="menu" class="s-pttn">
+
+    <section id="menu--heading" class="orange--light">
+
+      <h1 class="t--drop">Menu</h1>
+      <img src="../images/menu-cover.jpeg" alt="lavender pattern"/>
+    </section>
+
+    <section id="menu-portfolio" class="force-center p-minor--vary-xl">
+
+      <h2 class="blue--dark">Portfolio</h2>
+      <div id="menu-portfolio--art-cont">
+        <article class="menu-portfolio--artwork">
+
+          <div class="menu-portfolio--fde-cont">
+            <img src="../images/gemini-collage.jpeg" alt="digital collage of two emotions"/>
+            <img class="menu-portfolio--fde" src="../images/love-sprung-from-hate.jpeg" alt="digital collage angel and triangle"/>
+          </div>
+          <h3><a href="../graphic-design/index.html" class="link-white-bg--orange visual-link">Graphic Design</a></h3>
+        </article>
+
+        <article class="menu-portfolio--artwork">
+
+          <div class="menu-portfolio--fde-cont">
+            <img src="../images/web-markup.jpeg" alt="web page designed for proper html markup"/>
+            <img class="menu-portfolio--fde" src="../images/pde-markup.jpeg" alt="processing markup for a game"/>
+          </div>
+          <h3><a href="../coding/index.html" class="link-white-bg--orange visual-link">Coding</a></h3>
+        </article>
+
+        <article class="menu-portfolio--artwork">
+
+          <div class="menu-portfolio--fde-cont">
+            <img src="../images/sanity.gif" alt="a young woman smiles and shakes their head"/>
+            <img class="menu-portfolio--fde" src="../images/botb-mic.jpeg" alt="Paper Planes performs at a Battle of the Bands"/>
+          </div>
+          <h3><a href="../photo-video/index.html" class="link-white-bg--orange visual-link">Photo &amp; Video</a></h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu-about" class="blue-bg p-minor--vary-xl p-b">
+
+      <h2 class="force-center orange--light">About</h2>
+
+      <div id="menu-about--cont">
+
+        <div id="menu-about--left" class="blue--light">
+
+          <p>Hello my name is Daphne: artist, pet lover, spooky enthusiast, and unfortunately a Greek deity that was turned into a laurel tree to escape the unwanted pursuits of Apollo.</p>
+          <p>When I say art is my passion, it truly is- I spent three months planning and executing my graduation cap for my undergraduate degree. I designed and sewed a wand onto my cap with the words "Mischief Managed" and a coded a randomized light sequence with an Arduino and installed the Arduino plus lights into my graduation cap just because the concept excited me. I am in the works of starting a little side shop for resin creations I make in my freetime. <a href="../about/index.html"><span class="visually-hidden">Go To About Page</span><i class="fas fa-caret-right"></i></a></p>
+        </div>
+
+        <div id="menu-about--right">
+
+          <img src="../images/self-portrait-rect.jpeg" alt="abstract self portrait"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu-contact" class="p-minor--vary-xl">
+
+      <h2 class="blue--dark force-center">Contact</h2>
+
+      <div id="menu-contact--cont">
+
+        <div id="menu-contact--right" class="blue--dark p-b">
+
+          <p>Looking to work toghether? See something you want to learn more about?</p>
+          <p>You can easily reach me via email by filling out the contact form. Please be patient with responses, I will respond as quickly as I am able to.</p>
+          
+          <h3>Q: Are you currently taking on commissions?</h3>
+          <p>Yes! I am currently open for work. At this time I am open to working on illustrations, logos &amp; branding, as well as product design.</p>
+
+          <h3>Q: What are your rates?</h3>
+          <p>Pricing varies on a few different factors including time to complete, scale of, and type of project.</p>
+
+          <img src="../images/connected.png" alt="two hands reaching for each other" class="m-t"/>
+        </div>
+
+        <div id="menu-contact--left">
+
+          <form name="contact-form" method="POST" action="../contact-form-processing.php">
+          
+            <div class="contact-form--text-input">
+              <p>Name:</p><br/>
+              <input type="text" name="name">
+            </div>
+
+            <div class="contact-form--text-input">
+
+              <p>Email:</p><br/>
+              <input type="text" name="email">
+            </div>
+
+            <div class="contact-form--text-input">
+
+              <p>Subject:</p><br/>
+              <input type="text" name="subject">
+            </div>
+
+            <div id="contact-form--radio-input" class="m-b">
+
+              <p>Inquiry Type:</p>
+              <input type="radio" id="application" name="inquiry-type" value="Job Application">
+                <label for="application">Job Application</label><br/>
+
+              <input type="radio" id="freelance" name="inquiry-type" value="Freelance Work">
+                <label for="freelance">Freelance Work</label><br/>
+
+              <input type="radio" id="shop" name="inquiry-type" value="Shop Questions">
+                <label for="shop">Shop Questions</label><br/>
+            </div>
+
+            <div class="contact-form--text-input">
+
+              <p>Message:</p><br/>
+              <textarea name="message"></textarea><br/>
+            </div>
+
+            <input type="submit" value="Send Message">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="orange-bg--light p-minor--xl force-right">
+
+      <nav>
+  
+        <ul class="lis-itm--hvy">
+
+          <li>
+
+            <a class="icon-link--orange-bg" href="index.html">
+
+              <span class="visually-hidden">Home</span>
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg" href="../about/index.html">
+            
+              <span class="visually-hidden active active--white-bg--orange">About</span>
+              <i class="far fa-address-card"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg" href="../contact/index.html">
+            
+              <span class="visually-hidden">Contact</span>
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg" href="https://www.instagram.com/daizziestudio/" target="_blank">
+            
+              <span class="visually-hidden">Instagram</span>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+
+            <a class="icon-link--orange-bg" href="https://www.etsy.com/shop/delicateentity" target="_blank">
+            
+              <span class="visually-hidden">Shop</span>
+              <i class="fa fa-solid fa-store"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
